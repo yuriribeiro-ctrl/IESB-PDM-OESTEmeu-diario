@@ -1,0 +1,4 @@
+import { router, useLocalSearchParams } from 'expo-router';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
+export default function TaskDetail() { const { id } = useLocalSearchParams(); return <View style={s.container}><Text style={s.kicker}>DETALHE</Text><Text style={s.title}>Tarefa número {id}</Text><Text style={s.copy}>Você abriu esta tarefa por uma rota dinâmica do Expo Router.</Text><Pressable style={s.button} onPress={() => router.back()}><Text style={s.buttonText}>Voltar</Text></Pressable></View>; }
+const s = StyleSheet.create({ container:{flex:1,padding:28,justifyContent:'center',backgroundColor:'#f7f7fb'}, kicker:{color:'#6d5dfc',fontWeight:'800',letterSpacing:2}, title:{fontSize:28,fontWeight:'800',marginVertical:12}, copy:{fontSize:16,color:'#555',lineHeight:24,marginBottom:24}, button:{backgroundColor:'#17172b',padding:16,borderRadius:14,alignItems:'center'},buttonText:{color:'#fff',fontWeight:'700'} });
