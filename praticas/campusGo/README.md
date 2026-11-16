@@ -64,16 +64,11 @@ A autenticação anônima é adequada à demonstração acadêmica, mas não sub
 - `app/(tabs)/tasks.js`, `app/new-task.js`, `app/task/[id].js`: lista, formulário e detalhe/ações.
 - `firestore.rules` e `firebase.json`: regras versionadas localmente.
 
-## Git Flow e status desta cópia
+## Git Flow e status
 
-O enunciado pede `main`, `develop` e branches `feature/...`, com Pull Request de feature para `develop`. A branch em que esta continuação foi preparada é `feature/campus-go`, iniciada a partir de `61f6c03`. Na última conferência do remoto, existiam `main` e `feature/campus-go`, mas não `develop`. As PRs anteriores #4 (Gerenciador de despesas) e #5 (CampusGo) estavam abertas; esta cópia local **não foi commitada, enviada ao GitHub ou transformada em nova PR**.
+O enunciado pede `main`, `develop` e branches `feature/...`, com Pull Request de feature para `develop`. A branch `develop` foi criada a partir de `main`. A continuação está publicada na branch `feature/campus-go`, no commit `b6e233e`.
 
-Para concluir o fluxo antes da entrega, após revisar e testar a cópia:
-
-1. Crie `develop` a partir de `main` no GitHub (ou localmente e publique-a).
-2. Faça commit das alterações desta branch `feature/campus-go` e envie-a ao remoto.
-3. Abra uma PR de `feature/campus-go` para `develop`, explique as alterações e faça a revisão.
-4. Não declare o Git Flow completo até `develop` e a PR correspondente existirem. Não use force-push.
+A [PR #5](https://github.com/yuriribeiro-ctrl/IESB-PDM-OESTEmeu-diario/pull/5) tem base `develop` e segue aberta para revisão; ainda não foi mesclada. O fluxo de branches e abertura da PR está realizado. Aguarde a revisão e só faça merge conforme a orientação do professor. Não use force-push.
 
 ## Demonstração
 
